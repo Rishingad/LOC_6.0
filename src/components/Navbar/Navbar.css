@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0.4rem 7%;
+  box-sizing: border-box;
+  background-color: #0000003c;
+}
+
+.navbar.navbar-fill {
+  background-color: #000000cb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar .MuiSvgIcon-root {
+  display: none;
+  z-index: 10;
+}
+
+.menu-show {
+  display: block;
+  color: white;
+}
+
+.navbar .nav-menu .MuiSvgIcon-root {
+  display: none;
+  z-index: 10;
+  color: #000;
+}
+
+.navbar .nav-menu {
+  display: flex;
+  column-gap: 1.5rem;
+  list-style: none;
+}
+
+.navbar .nav-menu li {
+  font-family: "Nunito";
+  font-weight: normal;
+  font-size: 1.4rem;
+  transition: all 2s;
+}
+
+.navbar .nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar .nav-menu li:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+
+.navbar .nav-menu li:hover {
+  color: #fff;
+  z-index: 1;
+}
+
+.navbar .nav-menu li:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  city: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar .nav-menu {
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 5rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    height: 100vh;
+    z-index: 1000;
+    box-sizing: border-box;
+    padding: 3rem 3rem;
+    margin: 0;
+    clip-path: circle(0% at 0 0);
+    transition: 1s ease-in-out;
+    box-sizing: border-box;
+  }
+
+  .navbar .nav-menu.menu-show {
+    clip-path: circle(140.9% at 0 0);
+  }
+
+  .navbar .nav-menu li a {
+    color: #fff;
+  }
+
+  .navbar .nav-menu .MuiSvgIcon-root {
+    position: fixed;
+    display: block;
+    right: 10%;
+    top: 5%;
+    color: #fff;
+  }
+
+  .navbar .MuiSvgIcon-root {
+    display: inline-block;
+
+    color: #fff;
+  }
+
+  .home-section:before {
+    background-position: -20rem -15rem;
+  }
+}
+
+/* stroke */
+.navbar .nav-menu li a,
+.navbar .nav-menu li a {
+  position: relative;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.7rem;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar .nav-menu li a:after,
+.navbar .nav-menu li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #06f8db;
+  height: 1px;
+}
+
+.navbar .nav-menu li a:hover:after {
+  width: 100%;
+}
+
+.navbar .nav-menu li a {
+  transition: all 2s;
+}
+
+.navbar .nav-menu li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+
+.navbar .nav-menu li a:hover {
+  color: #000;
+  z-index: 1;
+}
+
+.navbar .nav-menu li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/* Keyframes */
+@keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #06f8db;
+    border-radius: 10px;
+  }
+}

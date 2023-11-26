@@ -1,0 +1,51 @@
+.d_head {
+    font-size: 3.3rem;
+    margin-top: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #06F8DB;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card-list{
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.card {
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem 1rem;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    box-shadow: 0 0px 30px -5px rgba(105, 55, 212, 0.348) inset;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.domain_img{
+    height: 10rem;
+    width: 10rem;
+    margin-top: 1.5rem;
+}
+
+.domain_title{
+    font-size: 1.6rem;
+    width: 10rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+
+.inner_card{
+    margin-top: 2rem;
+}

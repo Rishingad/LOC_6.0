@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=M+PLUS+Rounded+1c:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+.home-section {
+  position: relative;
+  height: 100vh;
+  padding: 0 5rem;
+  padding-top: 15rem;
+  box-sizing: border-box;
+}
+
+.home-section:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("../../assets/images/homebg.png") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/images/homebg.png") no-repeat;
+  background-position: 14rem -11rem;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -10;
+}
+
+.main-wrapper {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.main-wrapper .title {
+  text-transform: uppercase;
+  font-family: "Nico Moji";
+  font-weight: 900;
+  color: #06f8db;
+  font-size: 5rem;
+  position: relative;
+  z-index: 8;
+  text-align: center;
+}
+
+.main-wrapper .title::before {
+  position: absolute;
+  content: "6.0";
+  font-size: 20rem;
+  font-family: "Inter";
+  z-index: -10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-text-fill-color: rgb(0, 0, 0);
+  -webkit-text-stroke: 5px #094a43 !important;
+}
+
+.main-wrapper .coming-soon-wrapper {
+  font-size: 4rem;
+  font-family: "Orbitron";
+  color: #f5f5f5;
+}
+
+@media only screen and (max-width: 1200px) {
+  .home-section:before {
+    background-position: -20rem -15rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .home-section {
+    padding: 0 2.5rem;
+  }
+
+  .main-wrapper {
+    padding-top: 5rem;
+    justify-content: space-evenly;
+  }
+
+  .main-wrapper .title {
+    font-size: 54px;
+  }
+
+  .main-wrapper .title::before {
+    font-size: 18rem;
+  }
+
+  .main-wrapper .coming-soon-wrapper {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  .home-section {
+    padding: 0 2.5rem;
+  }
+
+  .main-wrapper {
+    padding-top: 5rem;
+    justify-content: space-evenly;
+  }
+
+  .main-wrapper .title {
+    font-size: 46px;
+  }
+
+  .main-wrapper .title::before {
+    font-size: 15rem;
+  }
+}

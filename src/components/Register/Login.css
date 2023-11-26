@@ -1,0 +1,37 @@
+ .form-title {
+    color: #06F8DB;
+    font-size: 64px;
+    font-weight: 400;
+    font-family: 'Orbitron', sans-serif;
+    line-height: 80.26px;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.form-label {
+    font-family: "Nunito";
+    font-size: 15px !important;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    margin-bottom: 4px;
+    text-align: left;
+    margin: 10px;
+}
+
+div .outlined-input {
+    border-color: #06F8DB !important;
+}
+
+
+#form_id{
+    margin-bottom: 2rem;
+}
+
+.submit:hover{
+    background-color: #6236C0;
+}
+.link-style{
+   color: #06F8DB; 
+   text-decoration: none;
+}

@@ -1,0 +1,164 @@
+.head {
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #06F8DB;
+    margin-left: 30px;
+    margin-bottom: 2rem;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 40px;
+    padding: 2rem 5rem;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(to right bottom, rgba(4, 235, 208, 0.046), black);
+}
+
+.name,
+.email,
+.phone,
+.nation,
+.msg {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    font-size: 22px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#name,
+#email,
+#phone,
+#nation,
+#msg {
+    padding: 10px 20px;
+    font-size: 25px;
+    color: white;
+    font-size: 22px;
+    width: 19vw;
+    background: none;
+    border: none;
+    box-shadow: 0px 0px 5px 0px #06f8dc2a;
+    font-family: 'Nunito Sans', sans-serif;
+    border-radius: 15px;
+}
+
+.labels {
+    margin-bottom: 15px;
+    letter-spacing: 0.1rem;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+}
+
+#msg {
+    width: 47vw;
+    border-radius: 20px;
+}
+
+.msg {
+    margin-top: 50px;
+}
+
+.first,
+.second {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.name,
+.nation {
+    margin-right: 5rem;
+}
+
+.send {
+    padding: 10px 6rem;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: -5px;
+    background: none;
+    color: #6236C0;
+    border: 2px solid #6236C0;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.send:hover {
+    background-color: #6236C0;
+    color: white;
+}
+
+.main_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+@media screen and (max-width:800px) {
+
+    .name,
+    .nation {
+        margin-right: 2rem;
+    }
+
+    #name,
+    #email,
+    #phone,
+    #nation,
+    #msg {
+        width: 30vw;
+    }
+
+    .form {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .name,
+    .nation {
+        margin-right: 0.5rem;
+    }
+
+    .labels {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .form {
+        padding: 1rem;
+    }
+
+    .send {
+        padding: 1rem 5rem;
+    }
+
+    .head {
+        font-size: 2rem;
+    }
+}
