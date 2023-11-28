@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route,useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Register from "./components/Register/Register";
 import About from "./components/About/About";
 import Home from "./pages/Home";
@@ -11,9 +11,8 @@ import "react-toastify/dist/ReactToastify.css";
 import useToken from "./useToken";
 function App() {
   const { token, setToken } = useToken();
-  const location = useLocation();
   if (!token) {
-    if (location.pathname === "/register") {
+    if (window.location.href === "https://djslinesofcode.netlify.app/register") {
       return (
         <>
           <div>
@@ -24,7 +23,7 @@ function App() {
           <Footer></Footer>
         </>
       );
-    } else if (location.pathname === "/login") {
+    } else if (window.location.href === "https://djslinesofcode.netlify.app/login") {
       return (
         <>
           <div>
