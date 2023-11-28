@@ -12,7 +12,8 @@ import useToken from "./useToken";
 function App() {
   const { token, setToken } = useToken();
   if (!token) {
-    if (window.location.href === "https://djslinesofcode.netlify.app/register") {
+    if (window.location.pathname === "/register") {
+      console.log(window.location.pathname)
       return (
         <>
           <div>
@@ -23,7 +24,7 @@ function App() {
           <Footer></Footer>
         </>
       );
-    } else if (window.location.href === "https://djslinesofcode.netlify.app/login") {
+    } else if (window.location.pathname === "/login") {
       return (
         <>
           <div>
