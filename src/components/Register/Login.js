@@ -30,6 +30,7 @@ export default function Login({ setToken }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Login successful");
     try {
       const response = await axios.post(`${IP}/auth/login`, {
         email: formData.email,

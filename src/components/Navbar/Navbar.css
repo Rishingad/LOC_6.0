@@ -10,9 +10,9 @@
   right: 0;
   width: 100%;
   z-index: 10;
-  padding: 0.4rem 7%;
+  padding: 0.8rem 7%;
   box-sizing: border-box;
-  background-color: #0000003c;
+  background-color: #00000065;
 }
 
 .navbar.navbar-fill {

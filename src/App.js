@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,useLocation } from "react-router-dom";
 import Register from "./components/Register/Register";
 import About from "./components/About/About";
 import Home from "./pages/Home";
@@ -11,8 +11,9 @@ import "react-toastify/dist/ReactToastify.css";
 import useToken from "./useToken";
 function App() {
   const { token, setToken } = useToken();
+  const location = useLocation();
   if (!token) {
-    if (window.location.pathname === "/register") {
+    if (location.pathname === "/register") {
       return (
         <>
           <div>
@@ -23,7 +24,7 @@ function App() {
           <Footer></Footer>
         </>
       );
-    } else if (window.location.pathname === "/login") {
+    } else if (location.pathname === "/login") {
       return (
         <>
           <div>

@@ -5,6 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import {InstaLink , LinkedinLink , FacebookLink , TwitterLink} from "../../constant.js"
 
 function Footer() {
   const iconStyle = {
@@ -77,16 +78,16 @@ function Footer() {
             >
               {/* Social media icons here */}
               <IconButton style={iconStyle}>
-                <InstagramIcon style={{ color: "white" }} />
+                <a href={InstaLink}><InstagramIcon style={{ color: "white" }} /></a>
               </IconButton>
               <IconButton style={iconStyle}>
-                <LinkedInIcon style={{ color: "white" }} />
+                <a href={LinkedinLink}><LinkedInIcon style={{ color: "white" }} /></a>
               </IconButton>
               <IconButton style={iconStyle}>
-                <TwitterIcon style={{ color: "white" }} />
+                <a href={TwitterLink}><TwitterIcon style={{ color: "white" }} /></a>
               </IconButton>
               <IconButton style={iconStyle}>
-                <FacebookIcon style={{ color: "white" }} />
+                <a href={FacebookLink}><FacebookIcon style={{ color: "white" }} /></a>
               </IconButton>
             </Box>
           </Box>
