@@ -53,12 +53,12 @@ const Navbar = () => {
         <a href={"#contact"}>Register Now</a>
           
         </li> */}
-        <div 
+        {/* <div 
   className="apply-button" 
   data-hackathon-slug="lines-of-code-djsce" 
   data-button-theme="dark-inverted"
   style={{ height: '44px', width: '312px' }}
-></div>
+></div> */}
 
 
         {!isMenuOpen ? null : (
