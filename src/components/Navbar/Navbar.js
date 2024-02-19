@@ -5,7 +5,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const token = sessionStorage.getItem("token");
+  
   function menuHandler() {
     console.log("click");
     console.log(isMenuOpen);
@@ -13,13 +13,7 @@ const Navbar = () => {
   }
 
   const [scrollPosition, setScrollPosition] = useState(0);
-  const loginButtonHandler = () => {
-    if (token) {
-      sessionStorage.removeItem("token");
-    } else {
-      sessionStorage.removeItem("token");
-    }
-  };
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,11 +49,17 @@ const Navbar = () => {
         <li className="cursor-pointer menu-item">
           <a href={"#contact"}>Contact Us</a>
         </li>
-        <li className="cursor-pointer menu-item">
-          <a href={"/register"} onClick={loginButtonHandler}>
-            {token ? "Logout" : "Register Now"}
-          </a>
-        </li>
+        {/* <li className="cursor-pointer menu-item">
+        <a href={"#contact"}>Register Now</a>
+          
+        </li> */}
+        <div 
+  className="apply-button" 
+  data-hackathon-slug="lines-of-code-djsce" 
+  data-button-theme="dark-inverted"
+  style={{ height: '44px', width: '312px' }}
+></div>
+
 
         {!isMenuOpen ? null : (
           <CloseIcon

@@ -7,15 +7,18 @@ import Polygon from "../../assets/images/Polygon_Logo-Colored@2x.png";
 const Sponsor = () => {
   return (
     <>
-      <div className='sponsor-container  '>
-        <h1 className='sponsor-Head justify-center text-center items-center flex flex-col '>
+      <div className='sponsor-container text-center'>
+        <h1 className='sponsor-Head mb-4'>
           Sponsors
         </h1>
-        <div className="flex mt-8">
-          <img className='sponsor-img mr-4' src={Devfolio} alt='Devfolio'/>
-          <img className='sponsor-img ml-[8rem]' src={Polygon} alt='Polygon'/>
+        <div className="flex flex-col items-center mt-8">
+          <img className='sponsor-img mt-4' src={eth} alt='Eth'/>
+          <img className='sponsor-img mt-4' src={Polygon} alt='Polygon'/>
         </div>
-        <img className='sponsor-img mt-4' src={eth} alt='Eth'/>
+        <div className="mb-8">
+          
+          <img className='sponsor-img mx-auto mb-4' src={Devfolio} alt='Devfolio'/>
+        </div>
       </div>
     </>
   );
